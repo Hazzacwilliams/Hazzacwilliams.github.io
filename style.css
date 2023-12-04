@@ -1,3 +1,19 @@
-body {
-    background-color: black;
+nav container {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: solid 2px black;
+    justify-items: center;
+    flex-direction: column;
+}
+.bars{
+    background-color: grey;
+    height: 7px;
+    width: 45px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+}
+#bar2 {
+    width: 30px;
 }
