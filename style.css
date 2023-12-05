@@ -92,6 +92,15 @@ main {
     
 }
 
+mainChoose {
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
 #designThumbnail {
     height: 80%;
     width: 80%;
@@ -103,4 +112,11 @@ main {
     height: 5%;
     border: solid white 5px;
     margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.mainButton{
+    border: white solid 3px;
+    height: 10%;
+    width: 5%;
 }
