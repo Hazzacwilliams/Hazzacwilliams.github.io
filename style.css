@@ -1,3 +1,13 @@
+body{
+    background-color: rgb(3, 5, 48);
+}
+
+header{
+    position: relative;
+    height:200px;
+    display: flex;
+}
+
 /* Styling and animation for the nav icon.*/
 nav container {
     display: flex;
@@ -24,11 +34,11 @@ nav container {
 }
 
 #bar1 {
-    top: 10%; 
+    top: 8%; 
 }
 
 #bar2 {
-    top: 40%;
+    top: 38%;
     width: 35px; 
 }
 
@@ -41,7 +51,7 @@ nav container:hover {
 }
 
 nav container:hover .bars {
-    background-color: #fff;
+    background-color: red;
 }
 
 nav container:hover #bar1 {
@@ -55,4 +65,17 @@ nav container:hover #bar2 {
 
 nav container:hover #bar3 {
     transform: translateY(-16px); 
+}
+
+/* Styling of the logo */
+.logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    overflow: hidden;
+}
+#homeLogo{
+    height: 150px;
 }
