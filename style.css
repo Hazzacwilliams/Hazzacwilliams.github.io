@@ -1,19 +1,58 @@
+/* Styling and animation for the nav icon.*/
 nav container {
     display: flex;
-    width: 50px;
-    height: 50px;
-    border: solid 2px black;
-    justify-items: center;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    cursor: pointer; 
+    position: relative; 
 }
-.bars{
-    background-color: grey;
-    height: 7px;
+
+.bars {
+    background-color: #666;
+    height: 5px;
     width: 45px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 3px;
+    margin: 4px auto;
+    border-radius: 2px; 
+    transition: all 0.7s ease; 
+    position: absolute;
 }
+
+#bar1 {
+    top: 10%; 
+}
+
 #bar2 {
-    width: 30px;
+    top: 40%;
+    width: 35px; 
+}
+
+#bar3 {
+    top: 70%; 
+}
+
+nav container:hover {
+    background-color: #666;
+}
+
+nav container:hover .bars {
+    background-color: #fff;
+}
+
+nav container:hover #bar1 {
+    transform: translateY(16px) rotate(45deg); 
+}
+
+nav container:hover #bar2 {
+    transform: translateY(0) rotate(90deg);
+    width: 45px; 
+}
+
+nav container:hover #bar3 {
+    transform: translateY(-16px); 
 }
