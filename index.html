@@ -6,10 +6,11 @@
     <title>Harry Williams - My Portfolio's</title>
     <link href="C:\Users\Harry\Desktop\projects\Portfolio_Projects\Portfolio_Web_Page\style.css" type="text/css" rel="stylesheet" />
     <script src="C:\Users\Harry\Desktop\projects\Portfolio_Projects\Portfolio_Web_Page\script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="nav" onclick="navMenuOpen()">
             <container>
                 <div class="bars" id="bar1"></div>
                 <div class="bars" id="bar2"></div>
@@ -20,20 +21,27 @@
             <img id="homeLogo" src="C:\Users\Harry\Desktop\projects\Portfolio_Projects\Portfolio_Web_Page\IMAGES\logo_williams.png"></img>
         </logo>
     </header>
+    <hiddenMenu id="hiddenMenu">
+        <ul>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#contactPage">Contact Page</a></li>
+        </ul>
+    </hiddenMenu>
     <main>
         <mainChoose>
-            <div id="leftButton" class="mainButton">
+            <div id="leftButton" class="mainButton" onclick="arrowToSlide(0)">
 
             </div>
             <div id="designThumbnail">
-                <h1>Portfolio works here</h1>
+                <h1>Portfolio works...</h1>
+                <h1>Coming soon...</h1>
             </div>
-            <div id="rightButton" class="mainButton">
+            <div id="rightButton" class="mainButton" onclick="arrowToSlide(1)">
 
             </div>
         </mainChoose>
         <div id="scroll">
-
+            <input type="range" min="0" max="50" value="0" class="slider" id="slider" onchange="funTime()">
         </div>
     </main>
 </body>

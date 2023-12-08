@@ -1,3 +1,5 @@
+
+
 body{
     background-color: rgb(3, 5, 48);
 }
@@ -23,6 +25,7 @@ nav container {
     border-radius: 10px;
     cursor: pointer; 
     position: relative; 
+    z-index: 10;
 }
 
 .bars {
@@ -83,7 +86,6 @@ nav container:hover #bar3 {
 }
 
 main {
-    border: solid white 5px;
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -105,6 +107,10 @@ mainChoose {
     height: 80%;
     width: 80%;
     border: solid white 5px;
+    color:white;
+    text-align:center;
+    font-size: 70px;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 #scroll {
@@ -117,6 +123,80 @@ mainChoose {
 
 .mainButton{
     border: white solid 3px;
-    height: 10%;
-    width: 5%;
+    min-height: 10%;
+    min-width: 5%;
+    cursor: pointer;
+    position: relative;
+}
+.mainButton::before, .mainButton::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border: solid transparent;
+    height: 0;
+    width: 0;
+    pointer-events: none;
+}
+#leftButton::before {
+    border-right-color: white;
+    border-width: 25px 50px 25px 0;
+    left: 20%;
+    transform: translateY(-50%);
+}
+
+#rightButton::before {
+    border-left-color: white;
+    border-width: 25px 0 25px 50px;
+    right: 20%;
+    transform: translateY(-50%);
+}
+.slider{
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('IMAGES/face_1.PNG');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    overflow: visible;
+    height: 115px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 50px;
+    height: 60px;
+    background-image: url('IMAGES/face_1.png');
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+hiddenMenu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+hiddenMenu ul {
+    z-index: 2;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
 }
