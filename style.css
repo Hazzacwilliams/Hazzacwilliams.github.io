@@ -195,8 +195,13 @@ hiddenMenu ul {
     z-index: 2;
     font-size: 50px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     color: white;
     flex-direction: column;
+}
+
+aboutMe {
+    color: white;
+    font-family: 'Rethink Sans', sans-serif;
+    text-align: center;
+    
 }

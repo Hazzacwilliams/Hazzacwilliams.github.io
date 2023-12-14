@@ -1,12 +1,11 @@
-let counter = 0;
-
+//Need to update with display prop.
 function navMenuOpen(){
-    if(counter % 2 == 0){
-        document.getElementById('hiddenMenu').style.display = "block";
-        counter ++;
+    let hiddenMenu = document.getElementById('hiddenMenu');
+    let displayStyle = window.getComputedStyle(hiddenMenu).display;
+    if(displayStyle == "none"){
+        hiddenMenu.style.display = "block";
     } else {
-        document.getElementById('hiddenMenu').style.display = "none";
-        counter ++;
+        hiddenMenu.style.display = "none";
     }
 }
 

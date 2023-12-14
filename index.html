@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Williams - My Portfolio's</title>
-    <link href="C:\Users\Harry\Desktop\projects\Portfolio_Projects\Portfolio_Web_Page\style.css" type="text/css" rel="stylesheet" />
-    <script src="C:\Users\Harry\Desktop\projects\Portfolio_Projects\Portfolio_Web_Page\script.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -18,13 +18,13 @@
             </container>
         </nav>
         <logo class="logo">
-            <img id="homeLogo" src="C:\Users\Harry\Desktop\projects\Portfolio_Projects\Portfolio_Web_Page\IMAGES\logo_williams.png"></img>
+            <img id="homeLogo" src="IMAGES\logo_williams.png"></img>
         </logo>
     </header>
     <hiddenMenu id="hiddenMenu">
         <ul>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#contactPage">Contact Page</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact Page</a></li>
         </ul>
     </hiddenMenu>
     <main>
@@ -41,7 +41,7 @@
             </div>
         </mainChoose>
         <div id="scroll">
-            <input type="range" min="0" max="50" value="0" class="slider" id="slider" onchange="funTime()">
+            <input type="range" min="0" max="50" value="0" class="slider" id="slider" oninput="funTime()">
         </div>
     </main>
 </body>
